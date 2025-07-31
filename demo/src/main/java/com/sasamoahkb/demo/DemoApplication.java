@@ -14,7 +14,7 @@ public class DemoApplication {
 	}
 
 	// Additional methods or configurations can be added here if needed
-	@GetMapping
+	@GetMapping("/")
 	public String helloworld() {
 		return "Hello World Spring Boot!";
 	}
