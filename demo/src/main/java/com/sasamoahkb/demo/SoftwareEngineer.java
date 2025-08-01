@@ -2,7 +2,16 @@ package com.sasamoahkb.demo;
 
 import java.util.Objects;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+
+@Entity
 public class SoftwareEngineer {
+    @Id
+    @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
+    // Using IDENTITY strategy for auto-incrementing primary key
+    // This is suitable for PostgreSQL and other databases that support it
     private int id; 
     private String name;
     private String techstack;
