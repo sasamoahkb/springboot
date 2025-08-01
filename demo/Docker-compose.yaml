@@ -5,7 +5,8 @@ services:
     environment:
       POSTGRES_USER: sasamoahkb
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: /data/postgres
+      POSTGRES_DB: springboot
+      PGDATA: /data/postgres
     ports:
       - "5332:5432"
     volumes:
